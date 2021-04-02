@@ -14,6 +14,8 @@
     :definition #'meghanada-jump-declaration
     :references #'meghanada-reference)
 
+  (set-company-backend! 'java-mode '(company-meghanada :separate company-dabbrev-code))
+
   (map! :localleader
         :map java-mode-map
         (:prefix ("r" . "refactor")
